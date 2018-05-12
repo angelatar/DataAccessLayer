@@ -1,0 +1,10 @@
+name = Get_Person_Inform
+Select [FirstName],[MiddleName],[LastName],[EmailPromotion]
+FROM [AdventureWorks].[Person].[Person]
+
+name = Get_Product_Inform
+Select [Name],[ProductNumber],[ListPrice]
+FROM [AdventureWorks].[Production].[Product]
+
+name = Get_Emp_Man
+EXEC [dbo].[uspGetEmployeeManagers] @BusinessEntityID
